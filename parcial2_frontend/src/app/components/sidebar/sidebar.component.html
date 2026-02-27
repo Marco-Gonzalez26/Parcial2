@@ -1,0 +1,47 @@
+<aside
+  class="fixed top-0 left-0 h-full w-60 bg-neutral-900 border-r border-neutral-800 flex flex-col z-50"
+>
+  <div class="p-5 border-b border-neutral-800">
+    <div class="flex items-center gap-3">
+      <div class="w-8 h-8 bg-sky-500 rounded-lg flex items-center justify-center">
+        <lucide-icon [img]="Store" class="w-4 h-4 text-white" />
+      </div>
+      <div>
+        <p class="text-sm font-bold text-neutral-100 tracking-wide">Parcial2Ecommerce</p>
+        <p class="text-xs text-neutral-500">Gestión de Tienda</p>
+      </div>
+    </div>
+  </div>
+
+  <nav class="flex-1 p-3 space-y-0.5">
+    <p class="text-xs font-semibold text-neutral-600 uppercase tracking-widest px-3 py-2">Menú</p>
+
+    <a
+      routerLink="/productos"
+      routerLinkActive="bg-sky-500/10 text-sky-400"
+      class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-neutral-400 hover:text-neutral-100 hover:bg-neutral-800 transition-all text-sm font-medium"
+    >
+      <lucide-icon [img]="Package" class="w-4 h-4" />
+      Productos
+    </a>
+
+    <a
+      routerLink="/clientes"
+      routerLinkActive="bg-sky-500/10 text-sky-400"
+      class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-neutral-400 hover:text-neutral-100 hover:bg-neutral-800 transition-all text-sm font-medium"
+    >
+      <lucide-icon [img]="Users" class="w-4 h-4" />
+      Clientes
+    </a>
+
+    <a
+      routerLink="/ordenes"
+      routerLinkActive="bg-sky-500/10 text-sky-400"
+      class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-neutral-400 hover:text-neutral-100 hover:bg-neutral-800 transition-all text-sm font-medium"
+    >
+      <lucide-icon [img]="ShoppingBag" class="w-4 h-4" />
+      Órdenes
+    </a>
+  </nav>
+
+</aside>
