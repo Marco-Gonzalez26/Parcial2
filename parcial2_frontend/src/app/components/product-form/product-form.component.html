@@ -1,5 +1,5 @@
 <div class="p-8 max-w-2xl mx-auto">
-  <!-- Header -->
+
   <div class="mb-8">
     <a
       routerLink="/productos"
@@ -18,13 +18,13 @@
     </p>
   </div>
 
-  <!-- Form -->
+
   <form
     [formGroup]="form"
     (ngSubmit)="onSubmit()"
     class="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 space-y-5"
   >
-    <!-- Nombre -->
+
     <div>
       <label class="block text-xs font-semibold text-neutral-400 uppercase tracking-widest mb-1.5">
         Nombre <span class="text-red-400">*</span>
@@ -40,7 +40,6 @@
       }
     </div>
 
-    <!-- Talla y Color -->
     <div class="grid grid-cols-2 gap-4">
       <div>
         <label
@@ -81,7 +80,6 @@
       </div>
     </div>
 
-    <!-- Precio -->
     <div>
       <label class="block text-xs font-semibold text-neutral-400 uppercase tracking-widest mb-1.5">
         Precio (USD) <span class="text-red-400">*</span>
@@ -100,14 +98,13 @@
       }
     </div>
 
-    <!-- Error del servidor -->
     @if (serverError()) {
       <div class="bg-red-500/10 border border-red-500/20 rounded-xl px-4 py-3">
         <p class="text-red-400 text-sm">{{ serverError() }}</p>
       </div>
     }
 
-    <!-- Botones -->
+
     <div class="flex gap-3 pt-2">
       <a
         routerLink="/productos"
